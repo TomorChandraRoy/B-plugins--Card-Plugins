@@ -1,0 +1,69 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "b-blocks/test-purpose",
+  "version": "1.0.0",
+  "title": "Card Plugin",
+  "category": "widgets",
+  "description": "Short description of the Test Purpose",
+  "keywords": ["Card Plugin"],
+  "textdomain": "b-blocks",
+  "attributes": {
+    "cardimg": {
+      "type": "string",
+      "default": "https://i.ibb.co.com/vw6pZCQ/starbucks-coffee-in-the-green-background.webp"
+    },
+    "heading": {
+      "type": "string",
+      "default": "Morning Set"
+    },
+    "description": {
+      "type": "string",
+      "default": "Set of coffee and chocolate cookies as a top tier among our customers and perfect way to start your day."
+    },
+    "catogray": {
+      "type": "array",
+      "default": ["sugar", "vanilla aroma", "cherry jam"]
+    },
+    "price": {
+      "type": "number",
+      "default": 8
+    },
+    "buttontext": {
+      "type": "string",
+      "default": "Order Now"
+    },
+    "headingColor": {
+      "type": "string",
+      "default": ""
+    },
+    "descriptionColor": {
+      "type": "string",
+      "default": ""
+    },
+    "catograyColor": {
+      "type": "string",
+      "default": ""
+    },
+    "buttontextBg": {
+      "type": "string",
+      "default": ""
+    },
+	"backgroundClor":{
+	    "type": "string",
+      "default": ""
+	}
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "html": false
+  },
+  "example": {
+    "attributes": {}
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./view.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}
